@@ -1,0 +1,14 @@
+Instrucciones para creacion de la app.
+
+En este archivo voy a dejar anotado el paso a paso 
+de diferentes acciones que voy haciendo
+
+Empiezo por anotar el procedimiento para dar inicio a un projecto
+de NodeJs
+
+    npm init -y
+    npm i express
+    npm install -g express-generator
+    express myApp --ejs
+    cd myApp
+    npm install
