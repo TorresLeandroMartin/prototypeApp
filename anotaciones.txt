@@ -12,3 +12,14 @@ de NodeJs
     express myApp --ejs
     cd myApp
     npm install
+
+Comandos de inicializacion de Git
+
+git init
+git remote add origin urldelrepositorio
+git branch -M main
+git push -u origin main
+
+git add .
+git commit -m "Mensaje"
+git push origin branchQueQueremosPushear
