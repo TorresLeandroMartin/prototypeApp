@@ -11,32 +11,36 @@ module.exports = function (sequelize, dataTypes) {
     },
     quantity: {
       type: dataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     name: {
       type: dataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     description: {
       type: dataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     image: {
       type: dataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     category: {
       type: dataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     color: {
       type: dataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     price: {
       type: dataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
+    id_user: {
+      type: dataTypes.INTEGER,
+      foreignKey: true
+    }
   };
 
   let config = {

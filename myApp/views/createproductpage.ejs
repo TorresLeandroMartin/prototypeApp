@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Product Page</title>
+  </head>
+  <body>
+    <%- include('header') %>
+    <h1>Create product</h1>
+    <form action="/products/create" method="POST">
+      <div>
+        <label for="name">Name product</label>
+        <input type="text" name="name" />
+      </div>
+
+      <div>
+        <label for="price">Price</label>
+        <input type="number" name="price" />
+      </div>
+
+      <div>
+        <label for="description">Add Description</label>
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="image-product">Add image</label>
+        <input type="file" name="image-product" />
+      </div>
+
+      <div>
+        <label for="quantity">Stock/Quantity</label>
+        <input type="number" name="quantity">
+      </div>
+
+      <input type="submit" value="Add product">
+    </form>
+    <%- include('footer') %>
+  </body>
+</html>

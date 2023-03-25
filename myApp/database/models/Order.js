@@ -21,7 +21,7 @@ module.exports = function (sequelize, dataTypes) {
     },
     total: {
       type: dataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
   };
 

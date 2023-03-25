@@ -1,0 +1,16 @@
+<%- include('header') %>
+<h1><%=product.name%></h1>
+<ul>
+    <li>
+        <%=product.description%>
+    </li>
+    <li>
+        <%=product.price%>
+    </li>
+    <li>
+        <%=product.quantity%>
+    </li>
+</ul>
+
+<a href="/products/<%=product.id_product%>/edit">Edit product</a>
+<%- include('footer') %>

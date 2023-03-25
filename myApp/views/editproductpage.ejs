@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product Page</title>
+  </head>
+  <body>
+    <%- include('header') %>
+    <h1>Edit product page</h1>
+    <form action="/products/<%=product.id_product%>/edit" method="POST">
+      <div>
+        <label for="name">Name product</label>
+        <input type="text" name="name" value="<%=product.name%>"/>
+      </div>
+
+      <div>
+        <label for="price">Price</label>
+        <input type="number" name="price" value="<%=product.price%>"/>
+      </div>
+
+      <div>
+        <label for="description">Add Description</label>
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          rows="10"
+            value="<%=product.price%>"
+          ></textarea>
+      </div>
+
+      <div>
+        <label for="image-product">SOBRE ESTE TENGO QUE TRABAJAR PORQUE NO MUESTRO IMAGEN TODAVIA</label>
+        <input type="file" name="image-product" />
+      </div>
+
+      <div>
+        <label for="quantity">Stock/Quantity</label>
+        <input type="number" name="quantity" value="<%=product.quantity%>">
+      </div>
+
+      <input type="submit" value="Edit Product">
+    </form>
+
+    <form action="/products/<%=product.id_product%>/delete" method="POST">
+    <button type="submit">Delete</button></form>
+    <%- include('footer') %>
+  </body>
+</html>
