@@ -55,3 +55,27 @@ Los modelos van a contener las asociaciones de la base de datos.
 Pasamos a armar router y controller.
 
 Una vez tenemos armado carpeta router con los archivos .js que queremos, conectados con los controllers y estos tambien listos, comenzamos a armar CRUD.
+
+Pasamos a armar CRUD
+
+que rutas necesitamos?
+
+Products
+para crear
+get
+post
+
+editar - eliminar
+get
+put
+delete
+
+Users
+para crear
+get
+post
+
+editar - eliminar
+get
+put
+delete
